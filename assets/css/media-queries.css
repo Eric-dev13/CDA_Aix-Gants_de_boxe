@@ -30,6 +30,10 @@
   footer nav.navbar-footer{
     width: 40%;
   }
+
+  header section.banniere{
+    height: 420px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
