@@ -52,7 +52,7 @@ header section.banniere{
 
 .main__div--add-padding{
     background-color: rgb(56, 56, 56);
-    padding: 10px;
+    padding: 2%;
 }
 
 main div.container{
@@ -60,7 +60,13 @@ main div.container{
     padding: 7% 15% ; 
 }
 
-main div.container section>img{
+main div.container>section{
+  position: relative;
+  margin-bottom: 120px;
+  width: 100%;
+}
+
+main div.container>section>img{
   width: 100%;
 }
 
@@ -104,12 +110,6 @@ main div.container div.detail>p.nouveau-prix {
   color:orange;
 }
 
-main section{
-    position: relative;
-    /* border:1px solid red; */
-    margin-bottom: 120px;
-}
-
 main div.detail{
     display: flex;
     justify-content: space-around;
@@ -129,11 +129,13 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* height: 200px; */
+  color:white;
+  padding-bottom: 150px;
 }
 
 footer nav.navbar-footer{
   background-color: white;
+  color:black;
   position: absolute;
   padding: 2px 15px;
   border-radius: 5px;
@@ -142,19 +144,20 @@ footer nav.navbar-footer{
   border:1px solid gainsboro;
 }
 
-footer{
-  color:white;
-}
 
 footer>section.footer{
+  position: relative;
   top: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 footer>section.footer div{
+  /* border:1px solid red; */
   text-align: center;
-  width: 49%;
+  width: 45%;
+  padding: 5px;
 }
 
 hr{
@@ -164,9 +167,21 @@ hr{
   width: 90%;
 }
 
+footer aside{
+  position: relative;
+  top: 80px;
+}
+
 footer aside div{
+  position: relative;
+  top: 20px;
   display: flex;
   justify-content:space-evenly;
+}
+
+footer aside p{
+  position: relative;
+  top: 40px;
 }
 
 
