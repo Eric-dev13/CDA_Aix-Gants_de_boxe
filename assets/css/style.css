@@ -4,8 +4,8 @@ body{
     margin:0;
 }
 
-header{
-    /* height: 100vh; */
+.ft-size-prix{
+  font-size: 1em;
 }
 
 header>img{
@@ -29,7 +29,7 @@ header>nav{
     width: 100%;
 }
 
-header>nav>ul{
+.navbar{
     display:flex;
     list-style: none;
     padding: 0;
@@ -42,49 +42,72 @@ header>nav>ul>li{
     font-weight: 600;
 }
 
-main{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    background-color: rgb(32, 32, 32);
-    /* padding: 8px; */
+header section.banniere{
+  height: 220px;
+  width: 100%;
+  background: url("../images/header-page-catalogue.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-main .container{
+.main__div--add-padding{
+    background-color: rgb(56, 56, 56);
+    padding: 10px;
+}
+
+main div.container{
     background: url("../images/background.jpg");
-    padding: 0 40px; 
-    margin: 10px;
+    padding: 7% 15% ; 
 }
 
-section.banniere{
-    height: 220px;
-    width: 100%;
-    background: url("../images/header-page-catalogue.png") no-repeat;
-    background-position: center;
-    background-size: cover;
+main div.container section>img{
+  width: 100%;
+}
+
+main div.container div.promo{
+  position: absolute;
+  background-color: rgb(33, 37, 41);
+  color:orange;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 800;
+  top: 10%;
+  right: -30px;
+}
+
+main div.container div.description{
+  position: absolute;
+  bottom:-55px;
+  width: 100%;
+  text-align: center;
+  /* border:1px solid blue; */
+}
+
+main div.container div.description>p{
+  background-color: white;
+  padding: 10px;
+}
+
+main div.container div.description>p.description-ft-size{
+  font-size: 0.8em;
+}
+
+main div.container div.detail p{
+  font-weight: 700;
+}
+
+main div.container div.detail>p.ancien-prix {
+  text-decoration:line-through;
+}
+
+main div.container div.detail>p.nouveau-prix {
+  color:orange;
 }
 
 main section{
     position: relative;
     /* border:1px solid red; */
     margin-bottom: 120px;
-}
-
-main section>img{
-    width: 100%;
-}
-
-main div.description{
-    position: absolute;
-    bottom:-55px;
-    width: 100%;
-    text-align: center;
-    /* border:1px solid blue; */
-}
-
-main div.description>p{
-    background-color: white;
-    padding: 10px;
 }
 
 main div.detail{
@@ -94,11 +117,62 @@ main div.detail{
 }
 
 main div.detail>a{
-    background-color: black;
+    background-color: rgb(33, 37, 41);
     padding: 7px;
     color:white;
     text-decoration: none;
 }
+
+footer{
+  background-color: rgb(33, 37, 41);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 200px; */
+}
+
+footer nav.navbar-footer{
+  background-color: white;
+  position: absolute;
+  padding: 2px 15px;
+  border-radius: 5px;
+  width: 80%;
+  top: -25px;
+  border:1px solid gainsboro;
+}
+
+footer{
+  color:white;
+}
+
+footer>section.footer{
+  top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer>section.footer div{
+  text-align: center;
+  width: 49%;
+}
+
+hr{
+  background-color: gray;
+  border-radius: 10px;
+  height: 2px;
+  width: 90%;
+}
+
+footer aside div{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+
+
+
+
 
 
 
