@@ -1,0 +1,104 @@
+
+body{
+    background: url("../images/background.jpg");
+    margin:0;
+}
+
+header{
+    /* height: 100vh; */
+}
+
+header>img{
+    display: block;
+    margin: 20px auto;
+}
+
+header .subtitle{
+   text-align: center; 
+}
+
+header .subtitle span{
+    color :orange;
+}
+
+header p{
+    margin: 30px 0 30px 40px;
+}
+
+header>nav{
+    width: 100%;
+}
+
+header>nav>ul{
+    display:flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+header>nav>ul>li{
+    margin: 0 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+main{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background-color: rgb(32, 32, 32);
+    /* padding: 8px; */
+}
+
+main .container{
+    background: url("../images/background.jpg");
+    padding: 0 40px; 
+    margin: 10px;
+}
+
+section.banniere{
+    height: 220px;
+    width: 100%;
+    background: url("../images/header-page-catalogue.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main section{
+    position: relative;
+    /* border:1px solid red; */
+    margin-bottom: 120px;
+}
+
+main section>img{
+    width: 100%;
+}
+
+main div.description{
+    position: absolute;
+    bottom:-55px;
+    width: 100%;
+    text-align: center;
+    /* border:1px solid blue; */
+}
+
+main div.description>p{
+    background-color: white;
+    padding: 10px;
+}
+
+main div.detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main div.detail>a{
+    background-color: black;
+    padding: 7px;
+    color:white;
+    text-decoration: none;
+}
+
+
+
